@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Pokemon Battle</title>
+</head>
+<body background='https://barbarashdwallpapers.com/wp-content/uploads/2013/12/Pokemon-Wallpaper-with-Pikachu-mudkip-and-Charmander-600x338.jpg'>
+	<center>
+	<h2><img src="{{picture1}}" width="150" height="150">{{name1}} VS {{name2}} <img src="{{picture2}}" width="150" height="150"></h2> 
+	<h2>{{result['prob']}}% {{result['win']}} Wins!</h2>
+	<img src="{{result['graph']}}" align='middle'/>
+	<br>
+	<button onclick="goBack()">Battle Again > </button>
+	<script>
+	function goBack() {
+	window.history.back();
+	}
+	</script>
+	</center>
+</body>
+</html>
